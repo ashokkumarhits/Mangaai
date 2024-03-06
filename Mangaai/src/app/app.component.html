@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="background"></div>
+  <div class="content">
+      <h1>Welcome to Mangaai</h1>
+      <input type="file" #fileInput (change)="handleFileInput($event)" accept=".png, .jpeg" style="display:none">
+      <button (click)="fileInput.click()">Upload Image</button>
+      <p>{{ message }}</p>
+  </div>
+</div>
